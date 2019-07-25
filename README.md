@@ -3,6 +3,6 @@ Data and replication files for "Unlocking Amenities" by Albouy, Christensen, and
 
 ## Abstract
 
-Public-good complementarities have important implications for economic valuation, but are understudied. We find that public safety and urban parks are powerful complements using detailed crime and housing data in Chicago, New York, and Philadelphia.  Ignoring complementarities leads to i) undervaluing public goods; ii) inefficient investments in public capital in high-crime areas; iii) the (wrong) conclusion that public goods are a luxury; iv) overestimation of preference heterogeneity.  Our results indicate that reducing crime near parks can turn them from public "bads" to goods.  Reductions over the past two decades has ""unlocked" $2.8 billion in taxable property value in our sample cities and has the potential to unlock another $8 billion. 
+Public goods may exhibit complementarities that are essential for determining their individual value. Our results indicate that improving safety near parks can turn them from public bads to goods. Ignoring complementarities may lead to i) undervaluing the potential value of public goods; ii) overestimating heterogeneity in preferences; and iii) understating the value of public goods to minority households.  Recent reductions in crime have "unlocked" $5.5 billion in property value in Chicago, New York and Philadelphia. Still over half of the potential value of park proximity (over $10.5 billion) remains locked in.
 
 
