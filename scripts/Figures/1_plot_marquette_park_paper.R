@@ -23,7 +23,7 @@ rm(pkg)
 
 setwd("~/Dropbox/Phd Illinois/Research/Neigh_crime/Unlocking_amenities/github/Rescaled/")
 
-# register_google(key = "AIzaSyANLZLBQgpPun_rqkbfbAeQ9eXWN4AtuWI")
+
 # oz <-get_map(location=c(-87.700625, 41.767845),maptype='hybrid', zoom = 14) 
 # saveRDS(oz,"stores/marquette_park.rds")
 oz<-readRDS("~/Dropbox/Phd\ Illinois/Research/Neigh_crime/Unlocking_amenities/stores/marquette_park.rds")
