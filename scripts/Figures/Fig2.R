@@ -17,12 +17,9 @@ local({r <- getOption("repos"); r["CRAN"] <- "http://cran.r-project.org"; option
 # 
 # 
 # #Wd
-# #setwd("/Volumes/share/projects/CrimeAndParks/")
-# #setwd("/home/guest1/share/CrimeAndParks/") #bdeep
 # 
-# setwd("~/Dropbox/Phd Illinois/Research/Neigh_crime/Unlocking_amenities/github/Unlocking-Amenities_testing/")
-# 
-# # register_google(key = "AIzaSyANLZLBQgpPun_rqkbfbAeQ9eXWN4AtuWI")
+#setwd("~/Dropbox/Phd Illinois/Research/Neigh_crime/Unlocking_amenities/github/Unlocking-Amenities/")
+
 # # chicago.ggplot = c(lon = -87.7, lat = 41.83)
 # # chicago.map = get_map(location = chicago.ggplot,  maptype = c("toner"), source = c("stamen"), zoom = 11)
 # # saveRDS(chicago.map,"stores/chicago_map_stamen.rds")
@@ -101,7 +98,7 @@ local({r <- getOption("repos"); r["CRAN"] <- "http://cran.r-project.org"; option
 # 
 # #map
 #save.image("../Rescaled/stores/heat_map.Rda")
-setwd("~/Dropbox/Phd Illinois/Research/Neigh_crime/Unlocking_amenities/github/Rescaled/")
+setwd("~/Dropbox/Phd Illinois/Research/Neigh_crime/Unlocking_amenities/github/Unlocking-Amenities/")
 load("stores/heat_map.Rda")
 z<-ggmap(chicago.map) +
   geom_polygon(data = map, aes(x = long, y = lat, group = id, fill = layer2), 
@@ -112,16 +109,16 @@ z<-ggmap(chicago.map) +
   facet_wrap(~ year, ncol=2) +
   theme(
     legend.position="bottom",#none
-    text = element_text(size=10)) +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank(),
-        strip.background =element_rect(fill="white"), 
-        strip.text = element_text(colour = 'black'))
+    text = element_text(size=10,family="Times"),
+    axis.title.x=element_blank(),
+    axis.text.x=element_blank(),
+    axis.ticks.x=element_blank(),
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank(),
+    axis.ticks.y=element_blank(),
+    strip.background =element_rect(fill="white"), 
+    strip.text = element_text(colour = 'black'))
 z+ coord_fixed(xlim = c(-87.5, -87.8),  ylim = c(41.7, 41.99), ratio = 1.3)
 z
-ggsave("../Rescaled/views/homicide_risk_raster_with_labels.png", height = 5, width = 5, units="in")
+ggsave("views/fig2.jpg", height = 5, width = 5, units="in")
 #dev.off()

@@ -23,7 +23,6 @@ rm(pkg)
 setwd("~/Dropbox/Phd\ Illinois/Research/Neigh_crime/Unlocking_amenities")
 
 cty<-"NY"
-# register_google(key = "AIzaSyANLZLBQgpPun_rqkbfbAeQ9eXWN4AtuWI")
 # map = get_map(location = "New York",  maptype = c("toner"), source = c("stamen"), zoom = 11)
 # saveRDS(map,paste0("stores/city_",cty,".rds"))
 
